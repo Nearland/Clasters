@@ -67,7 +67,6 @@ pts = []
 for line in f:
     x, y, z, t = map(int, line.split())
     pts.append([x, y, z, t])
-
 pca = PCA(n_components=2)
 pca_2d = pca.fit_transform(pts)
 
